@@ -13,14 +13,14 @@ let mysqlConnect = function () {
     });
 };
 
-let createTable = `create table if not exists user_profile(
-    id int primary key auto_increment,
-    title varchar(255)not null,
-    completed tinyint(1) not null default 0
-)`;
+// let createTable = `create table if not exists user_profile(
+//     id int primary key auto_increment,
+//     title varchar(255)not null,
+//     completed tinyint(1) not null default 0
+// )`;
 
-mysqlConnect().query(createTable, (error, results, fields) => {
-    if (error) throw error;
-});
+// mysqlConnect().query(createTable, (error, results, fields) => {
+//     if (error) throw error;
+// });
 
 module.exports.localConnect = learn;
