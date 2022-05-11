@@ -23,4 +23,4 @@ let mysqlConnect = function () {
 //     if (error) throw error;
 // });
 
-module.exports.localConnect = learn;
+module.exports.localConnect = mysqlConnect;
