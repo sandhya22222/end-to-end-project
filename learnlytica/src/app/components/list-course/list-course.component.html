@@ -1,0 +1,24 @@
+<h1>{{300 | bracket}}</h1>
+<h1>{{500 | bracket}}</h1>
+
+<br>
+
+<pre>
+<div *ngFor="let user of userList">
+    {{user|json}}
+  
+</div>
+
+</pre>
+
+
+<br><br>
+<div class="row">
+
+    <!-- {{myCourseList |json}} -->
+    <div class="col" *ngFor="let course of myCourseList?.['sub-home'].data">
+        <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+
+        </app-course>
+    </div>
+</div>
